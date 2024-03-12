@@ -1,7 +1,7 @@
 # Deploy Upload API with Docker feat. Go Monio
+一個佈署模板
 
-
-## Install
+## Ubuntu Linux/WSL2 Install ( mac 及 win 請參考官方網站)
 - minio-server
 ```bash
 下載
@@ -31,7 +31,7 @@ git clone https://github.com/cbot918/yale-tutor/upload-api-docker-go-minio
 cd upload-api-docker-go-minio
 ```
 
-### POC upload png
+### POC of upload png
 ```bash
 go run cmd/minio/minio.go
 # should see new picture in minio testbucket
@@ -46,4 +46,7 @@ go run .
 # browse http://localhost:9000 to check testbucket have new picture just upload
 ```
 
-## 程式說明
+### deploy with one click
+```
+docker-compose up
+```
