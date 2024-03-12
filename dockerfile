@@ -2,8 +2,8 @@ FROM golang:1.20-alpine
 
 WORKDIR /app
 
-COPY . .
+# COPY . .
 
-RUN go mod tidy
+# RUN go mod tidy
 
-CMD ["go","run","."]
+# CMD ["go","run","."]

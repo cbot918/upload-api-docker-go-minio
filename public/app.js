@@ -4,7 +4,7 @@ async function uploadFile(file) {
   formData.append('file', file);
 
   try {
-      const response = await fetch('http://localhost:3457/upload', {
+      const response = await fetch('http://localhost:3456/upload', {
           method: 'POST',
           body: formData,
       });
