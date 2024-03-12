@@ -1,6 +1,8 @@
 module upload-api
 
-go 1.20
+go 1.21
+
+toolchain go1.21.5
 
 require (
 	github.com/gofiber/fiber/v2 v2.52.2
